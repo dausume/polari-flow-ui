@@ -29,7 +29,13 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "js-libs/p5.experience.js/p5.experience.js",
+              "js-libs/processing.input/p5.input.js",
+              "js-libs/p5.Polar/p5.polar.js",
+              "js-libs/processing.input/p5.input.js",
+              "node_modules/p5/lib/p5.js"
+            ]
           },
           "configurations": {
             "production": {

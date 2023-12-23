@@ -5,6 +5,12 @@ module.exports = function (config) {
   config.set({
     basePath: '',
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
+    files:[
+      'src/app/p5-flow-ui.component.spec.ts',
+      'src/app/Services/p5-bootstrap-service/p5-bootstrap.service.test.ts',
+      'src/app/Services/**/*.test.ts',
+      'src/app/Components/**/*.test.ts'
+    ],
     plugins: [
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
