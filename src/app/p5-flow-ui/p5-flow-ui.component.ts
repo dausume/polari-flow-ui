@@ -30,13 +30,6 @@ export class FlowUIComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     this.createCanvas();
-    this.testingCode();
-  }
-
-  //Code used to implement rudimentary testing for different functionality
-  testingCode()
-  {
-
   }
 
   createCanvas()
@@ -71,6 +64,7 @@ export class FlowUIComponent implements OnInit, AfterViewInit {
             this.canvasConfigService.getCanvasHeight()
           );
           p.stroke(255);
+          p.uxRect(100, 100, 50, 50);
           //var testRec = new p.uxRect(100,100,100,100,[])
           //this.testObject = 
           //console.log("finished setup")
@@ -80,13 +74,7 @@ export class FlowUIComponent implements OnInit, AfterViewInit {
           p.background(this.canvasConfigService.getCanvasColor()?.R,this.canvasConfigService.getCanvasColor()?.G,this.canvasConfigService.getCanvasColor()?.B);
           p.ellipse(50,50,80,80);
           console.log('debug p5 extensions')
-          // Assuming p5 is already imported or available
-          // Check if p5 has been extended with uxSquare method
-          /*if (typeof p5.prototype.uxSquare === 'function') {
-            console.log('p5 has been extended with uxSquare method!');
-          } else {
-            console.log('p5 has not been extended with uxSquare method.');
-          }*/
+
         };
       } 
     ,

@@ -1,9 +1,8 @@
 export interface NodeUIComponent {
   // Properties related to the UI component's layout
-  width: number;
-  height: number;
+  identifier: number;
   row: number;
   column: number;
-
+  [key: string]: any;
   // Other methods or properties specific to the UI component
 }

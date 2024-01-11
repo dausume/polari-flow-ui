@@ -4,8 +4,11 @@ import { NodeUIGrid } from "./NodeUIGrid";
 export class BaseNode {
     private uiComponents: NodeUIComponent[] = [];
     private internalGrid: NodeUIGrid = { rows: 1, columns: 1 };
+    [key: string]: any;
   
-    constructor(public identifier: string) {}
+    constructor(public identifier: string, rows:number=1, columns:number=1) {
+
+    }
   
     addUIComponent(uiComponent: NodeUIComponent): void {
       this.uiComponents.push(uiComponent);

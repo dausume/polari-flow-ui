@@ -1,7 +1,8 @@
 import { BaseNode } from './BaseNode';
 
-export class SquareNode extends BaseNode {
+export class CircleNode extends BaseNode {
   private static readonly DEFAULT_NODE_SIZE = 100;
+  public radius:number = CircleNode.DEFAULT_NODE_SIZE;
 
   constructor(identifier: string) {
     super(identifier);
@@ -9,8 +10,7 @@ export class SquareNode extends BaseNode {
     // Initialize the square node with a default size
     this.addUIComponent({
       identifier: 0,
-      width: SquareNode.DEFAULT_NODE_SIZE,
-      height: SquareNode.DEFAULT_NODE_SIZE,
+      radius: CircleNode.DEFAULT_NODE_SIZE,
       row: 0,
       column: 0,
     });
